@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>js-main/aync-js-promises · Test Site</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;aync-js-promises&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#aync-js-promises&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Aync js (Promises)&lt;/h1&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="js-main/aync-js-promises · Test Site"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/"/><meta property="og:description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;aync-js-promises&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#aync-js-promises&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Aync js (Promises)&lt;/h1&gt;
+"/><meta property="og:image" content="https://your-docusaurus-test-site.com/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://your-docusaurus-test-site.com/blog/atom.xml" title="Test Site Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://your-docusaurus-test-site.com/blog/feed.xml" title="Test Site Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/favicon.ico" alt="Test Site"/><h2 class="headerTitleWithLogo">Test Site</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/react/react" target="_self">Docs</a></li><li class=""><a href="/docs/doc4" target="_self">API</a></li><li class=""><a href="/help" target="_self">Help</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">js-main/aync-js-promises</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="aync-js-promises"></a><a href="#aync-js-promises" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Aync js (Promises)</h1>
+<h2><a class="anchor" aria-hidden="true" id="eventloop"></a><a href="#eventloop" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Eventloop</h2>
+<pre><code class="hljs css language-text">#!html
+<button id="root">start test</button>
+
+<script>
+    document.getElementById('root')
+            .addEventListener('click', onClick);
+
+    function onClick() {
+        console.log('--------START------');
+
+        / Имитируем тяжелые вычисления длительностью несколько секунд /
+        doHardWork();
+        setTimeout(() =>  console.log('--------TIMEOUT------'), 0);
+        console.log('--------END------');
+
+    }
+
+    function doHardWork() {
+        for (var i = 0; i < 50000000; i++) {
+            var number = Math.pow(number, i);
+        }
+    }
+</script>
+</code></pre>
+<p>Рассказать, последовательность в консолей, а потом, последовательность, если 3 раза кликнуть на кнопку</p>
+<h2><a class="anchor" aria-hidden="true" id="проверка-на-понимание-_microtask_-и-_macrotask_"></a><a href="#проверка-на-понимание-_microtask_-и-_macrotask_" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Проверка на понимание <em>microtask</em> и <em>macrotask</em></h2>
+<p>Рассказать порядок логов в консоли</p>
+<pre><code class="hljs css language-text">setTimeout(() => console.log(1))
+
+Promise.resolve()
+  .then(() => console.log(2))
+  .then(() => console.log(3))
+
+console.log(4)
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="promises-beginner"></a><a href="#promises-beginner" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Promises beginner</h2>
+<pre><code class="hljs css language-text">#!javascript
+
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => reject(55), 1000);
+
+  setTimeout(() => resolve("OK"), 2000);
+});
+
+promise
+  .then(
+    result => console.log("Fulfilled: " + result), 
+    error => console.log("Rejected: " + error) 
+  );
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="promises-advance"></a><a href="#promises-advance" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Promises advance</h2>
+<pre><code class="hljs css language-text">#!javascript
+
+Promise.resolve(55)
+.then(function (val) {
+    console.log(val);
+    throw new Error();
+})
+.then((val) => console.log('then', val))
+.catch((val) => {
+    console.log('catch', val);
+    return  Promise.reject();
+})
+.then(finalHandler, finalHandler1)
+.then(finalHandler, finalHandler1)
+.then(finalHandler, finalHandler1);
+
+function finalHandler() {
+    console.log('finalHandler')
+}
+function finalHandler1() {
+    console.log('finalHandler1')
+}
+</code></pre>
+<p><code>55 ➜ catch Error ➜ finalHandler1 ➜ finalHandler ➜ finalHandler</code></p>
+<p>Сработает reject раньше</p>
+<h2><a class="anchor" aria-hidden="true" id="promises-pro"></a><a href="#promises-pro" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Promises PRO</h2>
+<pre><code class="hljs css language-text">#!javascript
+
+Promise.resolve(44)
+  .then((a1) => console.log('a1 1', a1)||a1)
+  .then(() => doSomething()) // 2 sec
+  .then(() => doSomethingElse()) // 1 sec
+  .then((a4) => console.log('a4 2', a4))
+
+function doSomething(b) {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            console.log('res 22');
+            res(b);
+        }, 2000);
+    })
+}
+
+function doSomethingElse(b) {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            console.log('res 33');
+            res(b);
+        }, 1000);
+    })
+}
+</code></pre>
+<p>Если <code>doSomething()</code> не завернуть в функцию, то <code>doSomethingElse()</code> отработает параллельно,</p>
+<h4><a class="anchor" aria-hidden="true" id="extra"></a><a href="#extra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extra</h4>
+<p>Поменять строки 5 и 6 на</p>
+<pre><code class="hljs css language-text">.then(doSomething) 
+.then(doSomethingElse()) 
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="promises-all"></a><a href="#promises-all" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Promises all</h2>
+<pre><code class="hljs css language-text">#!javascript
+
+Promise.all([
+    console.log('more'),
+    doSomething(), // 2 sec
+    doSomethingElse() // 1 sec
+]).then(results => {
+    console.log('results', results);
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="async-await"></a><a href="#async-await" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Async/await</h2>
+<pre><code class="hljs css language-text">// helpers
+const timeout = n => new Promise(r => setTimeout(r, n));
+async function getUser(title, time) {
+    time = time || 700;
+    await timeout(time);
+
+    console.log(title);
+}
+// ------------------
+
+// Выполнить последовательно
+let user1 = await getUser('user1', 200);
+let user2 = await getUser('user2', 100);
+
+// Выполнить параллельно 
+let user1Promise = getUser('user4', 300);
+let user2Promise = getUser('user3', 100);
+
+// Вывести в конце
+console.log('end');
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="answer"></a><a href="#answer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Answer</h3>
+<pre><code class="hljs css language-text">(async function test1() {
+    // in series
+    let user1 = await getUser('user1', 200);
+    let user2 = await getUser('user2', 100);
+
+    // parallel
+    let user1Promise = getUser('user4', 300);
+    let user2Promise = getUser('user3', 100);
+
+    let user11 = await user1Promise;
+    let user12 = await user2Promise;
+
+    console.log('end');
+})();
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="extra-1"></a><a href="#extra-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📃 Extra</h2>
+<pre><code class="hljs css language-text">#!javascript
+
+function executeSequentially(promiseFactories) {
+  var result = Promise.resolve();
+  promiseFactories.forEach(function (promiseFactory) {
+    result = result.then(promiseFactory);
+  });
+  return result;
+}
+
+function myPromiseFactory() {
+  return somethingThatCreatesAPromise();
+}
+</code></pre>
+<p>По спецификации промис начинает выполнять заложенную в него логику сразу после создания. Он не будет ждать. Таким образом, не сами промисы, а массив фабрик промисов — это то, что действительно нужно передать в executeSequentially</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#eventloop">📃 Eventloop</a></li><li><a href="#проверка-на-понимание-_microtask_-и-_macrotask_">📃 Проверка на понимание <em>microtask</em> и <em>macrotask</em></a></li><li><a href="#promises-beginner">📃 Promises beginner</a></li><li><a href="#promises-advance">📃 Promises advance</a></li><li><a href="#promises-pro">📃 Promises PRO</a></li><li><a href="#promises-all">📃 Promises all</a></li><li><a href="#async-await">📃 Async/await</a><ul class="toc-headings"><li><a href="#answer">Answer</a></li></ul></li><li><a href="#extra-1">📃 Extra</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.ico" alt="Test Site" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
